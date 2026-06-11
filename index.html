@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolución del Cuestionario de Economía</title>
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Chart.js para los gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color:#f8fafc;
+            padding:30px;
+        }
+
+        .container{
+            max-width:1200px;
+            margin:auto;
+        }
+
+        header{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        header h1{
+            font-size:2.5rem;
+            color:#38bdf8;
+            margin-bottom:10px;
+        }
+
+        header p{
+            color:#cbd5e1;
+            font-size:1rem;
+        }
+
+        .card{
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            border-radius:20px;
+            padding:30px;
+            margin-bottom:30px;
+            box-shadow:0 8px 25px rgba(0,0,0,0.3);
+            border:1px solid rgba(255,255,255,0.1);
+        }
+
+        .card h2{
+            color:#38bdf8;
+            margin-bottom:20px;
+        }
+
+        .pregunta{
+            font-size:1.2rem;
+            font-weight:600;
+            margin-bottom:15px;
+        }
+
+        p{
+            line-height:1.8;
+            margin-bottom:15px;
+            text-align:justify;
+        }
+
+        ul{
+            margin-left:25px;
+            margin-bottom:15px;
+        }
+
+        li{
+            margin-bottom:10px;
+            line-height:1.7;
+        }
+
+        .destacado{
+            background:#0ea5e9;
+            color:white;
+            padding:15px;
+            border-radius:12px;
+            margin-top:20px;
+            font-weight:500;
+        }
+
+        @media(max-width:768px){
+
+            body{
+                padding:15px;
+            }
+
+            header h1{
+                font-size:2rem;
+            }
+
+            .card{
+                padding:20px;
+            }
+        }
+
+.tabla-economia{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.tabla-economia th{
+    background:#0284c7;
+    color:white;
+    padding:12px;
+}
+
+.tabla-economia td{
+    background:rgba(255,255,255,0.06);
+    padding:12px;
+    text-align:center;
+}
+
+.tabla-economia tr:hover td{
+    background:rgba(56,189,248,0.15);
+}
+
+h3{
+    color:#7dd3fc;
+    margin:25px 0 10px;
+}
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Resolución del Cuestionario de Economía</h1>
+        <p>Mercado, competencia perfecta, monopolio, oferta y demanda.</p>
+    </header>
+
+    <!-- INCISO 1 -->
+    <section class="card">
+
+        <h2>Inciso 1</h2>
+
+        <div class="pregunta">
+            ¿Qué se entiende por mercado?
+        </div>
+
+        <p>
+            En economía, el mercado es el conjunto de compradores y vendedores
+            que interactúan para intercambiar bienes y servicios a un determinado
+            precio. No necesariamente corresponde a un lugar físico, sino a cualquier
+            medio a través del cual se realizan transacciones entre oferentes y demandantes.
+        </p>
+
+        <p>
+            En el mercado se determina el precio y la cantidad de los bienes mediante
+            la interacción de la oferta y la demanda. Además, cumple una función importante
+            al coordinar las decisiones de producción y consumo dentro de una economía.
+        </p>
+
+        <p>
+            Por ejemplo, el mercado de automóviles está conformado por las empresas
+            que ofrecen vehículos y por las personas interesadas en adquirirlos.
+            La relación entre ambos grupos influye en el precio y en la cantidad de
+            vehículos vendidos.
+        </p>
+
+    </section>
+
+    <!-- INCISO 2 -->
+    <section class="card">
+
+        <h2>Inciso 2</h2>
+
+        <div class="pregunta">
+            ¿Cuáles son los supuestos del modelo de competencia perfecta?
+        </div>
+
+        <p>
+            El modelo de competencia perfecta se basa en una serie de supuestos
+            que permiten explicar el funcionamiento ideal de un mercado.
+        </p>
+
+        <ul>
+            <li>Existencia de muchos compradores y vendedores.</li>
+
+            <li>Homogeneidad del producto, es decir, todos los bienes ofrecidos son idénticos.</li>
+
+            <li>Libre entrada y salida de empresas del mercado.</li>
+
+            <li>Información perfecta para productores y consumidores.</li>
+
+            <li>Movilidad de los factores de producción.</li>
+
+            <li>Las empresas son precio-aceptantes y no pueden influir sobre el precio de mercado.</li>
+        </ul>
+
+    </section>
+
+    <!-- INCISO 3 -->
+    <section class="card">
+
+        <h2>Inciso 3</h2>
+
+        <div class="pregunta">
+            ¿Cómo se da el equilibrio en el modelo de competencia perfecta?
+        </div>
+
+        <p>
+            El equilibrio en competencia perfecta se alcanza cuando la cantidad
+            que los consumidores desean comprar coincide con la cantidad que los
+            productores desean vender a un determinado precio.
+        </p>
+
+        <p>
+            En ese punto no existen presiones para que el precio aumente o disminuya,
+            ya que tanto compradores como vendedores encuentran satisfechas sus expectativas.
+        </p>
+
+        <p>
+            Si el precio se ubica por encima del equilibrio, se genera un exceso
+            de oferta. Por el contrario, si el precio es inferior al de equilibrio,
+            se produce un exceso de demanda. Estas situaciones impulsan ajustes
+            que llevan nuevamente al mercado hacia el equilibrio.
+        </p>
+
+        <div class="destacado">
+            El equilibrio se produce cuando la oferta y la demanda se igualan.
+        </div>
+
+    </section>
+
+    <!-- INCISO 4 -->
+    <section class="card">
+
+        <h2>Inciso 4</h2>
+
+        <div class="pregunta">
+            ¿En qué consiste el monopolio?
+        </div>
+
+        <p>
+            El monopolio es una estructura de mercado caracterizada por la existencia
+            de un único productor o vendedor que ofrece un bien o servicio para el
+            cual no existen sustitutos cercanos.
+        </p>
+
+        <p>
+            Debido a la ausencia de competencia directa, la empresa monopolista
+            posee un alto grado de control sobre el precio y la cantidad producida.
+        </p>
+
+        <p>
+            Los monopolios suelen mantenerse gracias a barreras de entrada como
+            patentes, control exclusivo de recursos, concesiones gubernamentales
+            o elevados costos iniciales que dificultan la participación de nuevas empresas.
+        </p>
+
+        <p>
+            Como consecuencia, esta estructura de mercado puede generar precios
+            más elevados y menores cantidades ofrecidas en comparación con un mercado
+            de competencia perfecta.
+        </p>
+
+    </section>
+
+<!-- INCISO 5 -->
+<section class="card">
+
+    <h2>Inciso 5</h2>
+
+    <div class="pregunta">
+        Los siguientes son datos de oferta y demanda del bien X, por unidad de tiempo:
+    </div>
+
+    <table class="tabla-economia">
+        <tr>
+            <th>Precio</th>
+            <th>Cantidad Ofrecida</th>
+            <th>Cantidad Demandada</th>
+        </tr>
+
+        <tr><td>1</td><td>20</td><td>80</td></tr>
+        <tr><td>2</td><td>30</td><td>70</td></tr>
+        <tr><td>3</td><td>40</td><td>60</td></tr>
+        <tr><td>4</td><td>50</td><td>50</td></tr>
+        <tr><td>5</td><td>60</td><td>40</td></tr>
+        <tr><td>6</td><td>70</td><td>30</td></tr>
+        <tr><td>7</td><td>80</td><td>20</td></tr>
+        <tr><td>8</td><td>90</td><td>10</td></tr>
+    </table>
+
+    <h3>A) Punto de equilibrio</h3>
+
+    <p>
+        El equilibrio de mercado se presenta cuando la cantidad ofrecida es igual
+        a la cantidad demandada. En este caso, ocurre cuando el precio es 4 y la
+        cantidad intercambiada es de 50 unidades.
+    </p>
+
+    <div class="destacado">
+        Precio de equilibrio: 4 <br>
+        Cantidad de equilibrio: 50 unidades
+    </div>
+
+    <canvas id="grafico5" height="120"></canvas>
+
+    <h3>B) Precio igual a 3</h3>
+
+    <p>
+        A este precio, la cantidad demandada es de 60 unidades mientras que la
+        cantidad ofrecida es de 40 unidades. Se produce una escasez o exceso
+        de demanda de 20 unidades.
+    </p>
+
+    <h3>C) Precio igual a 5</h3>
+
+    <p>
+        Cuando el precio es 5, la cantidad ofrecida asciende a 60 unidades y la
+        cantidad demandada es de 40 unidades. En consecuencia, se genera un
+        excedente o exceso de oferta de 20 unidades.
+    </p>
+
+</section>
+
+
+<!-- INCISO 6 -->
+<section class="card">
+
+    <h2>Inciso 6</h2>
+
+    <div class="pregunta">
+        El mercado del pescado se encuentra en equilibrio. Analice qué efecto producen los siguientes eventos.
+    </div>
+
+    <h3>a) El gobierno establece un precio mínimo sobre el precio del pescado.</h3>
+
+    <p>
+        Si el precio mínimo es fijado por encima del precio de equilibrio,
+        los productores estarán dispuestos a ofrecer una mayor cantidad de pescado,
+        mientras que los consumidores reducirán su demanda.
+    </p>
+
+    <p>
+        Esta situación provoca un exceso de oferta, generando un excedente de
+        producción que podría requerir la intervención del gobierno.
+    </p>
+
+    <h3>b) Campaña contra el consumo de carnes rojas.</h3>
+
+    <p>
+        Inicialmente disminuirá la demanda de carnes rojas, provocando una reducción
+        tanto en el precio como en la cantidad de equilibrio de dicho mercado.
+    </p>
+
+    <p>
+        Posteriormente, debido a que el pescado actúa como bien sustituto,
+        aumentará la demanda de pescado, elevando su precio y la cantidad
+        comercializada.
+    </p>
+
+</section>
+
+
+<!-- INCISO 7 -->
+<section class="card">
+
+    <h2>Inciso 7</h2>
+
+    <div class="pregunta">
+        Trace las curvas de oferta y demanda por un bien W. Explique qué sucede en cada caso.
+    </div>
+
+    <h3>a) Aumenta el ingreso del consumidor.</h3>
+
+    <p>
+        Si el bien es normal, el incremento del ingreso ocasionará un aumento
+        de la demanda, desplazando la curva hacia la derecha y generando un
+        incremento tanto en el precio como en la cantidad de equilibrio.
+    </p>
+
+    <h3>b) Se introduce una mejora tecnológica.</h3>
+
+    <p>
+        Una mejora tecnológica reduce los costos de producción y permite ofrecer
+        una mayor cantidad del bien, desplazando la oferta hacia la derecha.
+        Como consecuencia, aumenta la cantidad de equilibrio y disminuye el precio.
+    </p>
+
+    <h3>c) Se da una situación de escasez de oferta del bien.</h3>
+
+    <p>
+        La reducción de la oferta desplaza la curva hacia la izquierda,
+        ocasionando un aumento en el precio y una disminución en la cantidad
+        de equilibrio.
+    </p>
+
+</section>
+
+<!-- INCISO 8 -->
+<section class="card">
+
+    <h2>Inciso 8</h2>
+
+    <div class="pregunta">
+        Sean "D" y "O" la demanda y la oferta de un determinado bien.
+    </div>
+
+    <p>
+        Se igualaron las funciones de oferta y demanda para encontrar el precio
+        de equilibrio. El resultado obtenido fue un precio de 7,5 unidades monetarias.
+    </p>
+
+    <p>
+        Sustituyendo dicho precio en cualquiera de las funciones, se determinó
+        que la cantidad de equilibrio corresponde a 75 unidades.
+    </p>
+
+    <div class="destacado">
+        Precio de equilibrio: 7,5 <br>
+        Cantidad de equilibrio: 75 unidades
+    </div>
+
+    <p>
+        Si el precio es superior al de equilibrio, se genera un exceso de oferta.
+        Por el contrario, si el precio es inferior, se produce un exceso de demanda.
+    </p>
+
+    <canvas id="grafico8" height="120"></canvas>
+
+</section>
+
+<!-- INCISO 9 -->
+<section class="card">
+
+    <h2>Inciso 9</h2>
+
+    <div class="pregunta">
+        Las curvas de oferta y demanda de mercado de un determinado producto son:
+        O = 50P - 100, D = 20900 - 100P
+    </div>
+
+    <p>
+        Se igualan la oferta y la demanda para encontrar el precio de equilibrio.
+    </p>
+
+    <div class="destacado">
+        Precio de equilibrio: 140 <br>
+        Cantidad de equilibrio: 6900 unidades
+    </div>
+
+    <p>
+        A precios de 160 y 120 se calculan las cantidades ofrecidas y demandadas.
+    </p>
+
+    <canvas id="grafico9" height="120"></canvas>
+
+</section>
+
+<!-- INCISO 10 -->
+<section class="card">
+
+    <h2>Inciso 10</h2>
+
+    <div class="pregunta">
+        Las curvas de oferta y demanda del mercado vienen dadas por:
+        O = 250 + 25P, D = 2750 - 75P
+    </div>
+
+    <p>
+        Se igualan las funciones para encontrar el precio y la cantidad de equilibrio.
+    </p>
+
+    <div class="destacado">
+        Precio de equilibrio: 25 <br>
+        Cantidad de equilibrio: 900 unidades
+    </div>
+
+    <p>
+        Para P = 9 se determina si existe exceso de oferta o demanda.
+    </p>
+
+    <canvas id="grafico10" height="120"></canvas>
+
+</section>
+
+</div>
+
+<script>
+
+new Chart(document.getElementById("grafico5"), {
+    type: "line",
+    data: {
+        labels: [1,2,3,4,5,6,7,8],
+        datasets: [
+            {
+                label: "Oferta",
+                data: [20,30,40,50,60,70,80,90],
+                borderWidth: 3
+            },
+            {
+                label: "Demanda",
+                data: [80,70,60,50,40,30,20,10],
+                borderWidth: 3
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: "Oferta y Demanda del Bien X"
+            }
+        }
+    }
+});
+
+new Chart(document.getElementById("grafico8"), {
+    type: "line",
+    data: {
+        labels: [0, 25, 50, 75, 100, 125, 150],
+        datasets: [
+            {
+                label: "Oferta",
+                data: [0, 0, 50, 75, 100, 125, 150],
+                borderWidth: 3
+            },
+            {
+                label: "Demanda",
+                data: [150, 125, 100, 75, 50, 25, 0],
+                borderWidth: 3
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: "Inciso 8 - Equilibrio del mercado"
+            }
+        }
+    }
+});
+
+new Chart(document.getElementById("grafico9"), {
+    type: "line",
+    data: {
+        labels: [0, 40, 80, 120, 160, 200],
+        datasets: [
+            {
+                label: "Oferta",
+                data: [-100, 1900, 3900, 5900, 7900, 9900],
+                borderWidth: 3
+            },
+            {
+                label: "Demanda",
+                data: [20900, 16900, 12900, 8900, 4900, 900],
+                borderWidth: 3
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: "Inciso 9 - Equilibrio del mercado"
+            }
+        }
+    }
+});
+
+new Chart(document.getElementById("grafico10"), {
+    type: "line",
+    data: {
+        labels: [0, 5, 10, 15, 20, 25, 30],
+        datasets: [
+            {
+                label: "Oferta",
+                data: [250, 375, 500, 625, 750, 875, 1000],
+                borderWidth: 3
+            },
+            {
+                label: "Demanda",
+                data: [2750, 2375, 2000, 1625, 1250, 875, 500],
+                borderWidth: 3
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: "Inciso 10 - Oferta y Demanda"
+            }
+        },
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: "Precio (P)"
+                }
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: "Cantidad"
+                }
+            }
+        }
+    }
+});
+
+</script>
+
+</body>
+</html>
